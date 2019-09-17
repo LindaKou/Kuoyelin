@@ -1,0 +1,36 @@
+<!-- 测试结果显示 -->
+<!-- 显示背景图片 -->
+<view class="totle" style="background-image: url('https://www.kuoyelindc.com/kuoyelin/img/back8.jpg')">
+  <block wx:for="{{panduan}}" wx:for-item="test" wx:key="this" wx:for-index="i">
+    <block wx:for="{{test.panduan}}" wx:for-item="test" wx:key="this" wx:for-index="i">
+      <!-- 显示题目标题 -->
+      <view class="kuangjia1">
+        {{test.timu_name}}
+      </view>
+      <!-- 显示该套题图片 -->
+      <view class="kuangjia1">
+        <image src="https://www.kuoyelindc.com/kuoyelin/img/{{test.timu_image}}"></image>
+      </view>
+      <view class="kuangjia1" bindtap='judge_jieguo' data-postjieguo="{{test.panduan}}">
+        <!-- 显示测试结果 -->
+        {{test.panduan}}
+      </view>
+    </block>
+    <block wx:for="{{test.yuceti}}" wx:for-item="tes" wx:key="this" wx:for-index="i">
+      <view style='margin-top:6px'>
+        <text decode="{{true}}"> 
+    </text>
+      </view>
+      <view class="kuangjia">
+
+        <view class="title1" data-id="{{tes.id}}" data-name="{{tes.name}}" bindtap="click_ceshi">{{tes.name}}</view>
+
+        <view class="type1" data-id="{{tes.id}}" data-name="{{tes.name}}" bindtap="click_ceshi">
+          <text style='color:gray'>类型：</text>{{tes.type}}</view>
+        <view data-id="{{tes.id}}" data-name="{{tes.name}}" bindtap="click_ceshi">
+          <image class="image1" src="https://www.kuoyelindc.com/kuoyelin/img/{{tes.image}}"></image>
+        </view>
+      </view>
+    </block>
+  </block>
+</view>

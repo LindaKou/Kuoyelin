@@ -1,0 +1,38 @@
+.totle{
+  background-color: lightcyan;
+   height: 100%;/*生效*/
+   position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+}
+
+.kuangjia1{
+  margin-top:20px;
+  width:90%;
+  background-color:#fff;
+  border-radius:5px;
+   margin:20px auto;
+   border: 2px solid #f8df0052;
+}
+.type1{
+  font-size:11px;
+  float:right;
+  color:gray;
+  margin-top:4px;
+  margin-right:4px
+}
+.image1{
+  width:20%;
+  height:55px;
+  float:right;
+  border-radius:10px;
+}
+.kuangjia{
+  height:90px;
+  margin-top:5px;
+  width:98%;
+  background-color:white;
+  border-radius:10px;
+  margin:0 auto
+}
